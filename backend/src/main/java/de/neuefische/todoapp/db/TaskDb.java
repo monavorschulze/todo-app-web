@@ -14,7 +14,6 @@ import java.util.List;
 @Repository
 public class TaskDb {
 
-    /*private final List<Task> tasks = new ArrayList<>();*/
     
     private ArrayList<Task> tasks = new ArrayList<>();
 
@@ -29,9 +28,5 @@ public class TaskDb {
     public ArrayList<Task> getTasks(){
         return tasks;
     }
-
-    public void add(Task task) {
-    }
-
 
 }

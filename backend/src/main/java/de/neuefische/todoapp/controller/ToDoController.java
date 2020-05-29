@@ -1,6 +1,7 @@
 package de.neuefische.todoapp.controller;
 
 
+import de.neuefische.todoapp.model.AddTodoData;
 import de.neuefische.todoapp.model.Task;
 import de.neuefische.todoapp.service.ToDoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,10 +25,9 @@ public class ToDoController {
         return toDoService.getAllTasks();
     }
 
-    @PostMapping
-    public Task addTask(@RequestBody Task task) {
-        toDoService.addTask(task);
-        return task;
+    @PutMapping
+    public Task addTask(@RequestBody AddTodoData descriptionObject) {
+        return toDoService.addDescription(descriptionObject.getDescription());
     }
 
 }
