@@ -23,5 +23,11 @@ public class ToDoController {
     public List<Task> getAllTodo(){
         return toDoService.getAllTasks();
     }
-    
+
+    @PostMapping
+    public Task addTask(@RequestBody Task task) {
+        toDoService.addTask(task);
+        return task;
+    }
+
 }

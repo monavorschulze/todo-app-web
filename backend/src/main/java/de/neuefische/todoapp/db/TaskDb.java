@@ -32,18 +32,6 @@ public class TaskDb {
 
     public void add(Task task) {
     }
-    /*public List<Task> getTasks(){
-
-        return tasks;
-    }
-
-    public void add(Task task){
-        this.tasks.add(task);
-    }
-
-    public void clearDB(){
-        tasks.clear();
-    }*/
 
 
 }
