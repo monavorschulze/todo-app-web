@@ -25,9 +25,10 @@ public class ToDoController {
         return toDoService.getAllTasks();
     }
 
+    /*
     @PutMapping
     public Task addTask(@RequestBody AddTodoData descriptionObject) {
         return toDoService.addDescription(descriptionObject.getDescription());
-    }
+    }*/
 
 }

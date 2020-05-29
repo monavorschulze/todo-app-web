@@ -19,10 +19,10 @@ public class ToDoService {
     public ToDoService(TaskDb taskDb){
         this.taskDb = taskDb;
     }
-
+/*
     public void addTask(Task task){
      taskDb.add(task);
-    }
+    }*/
 
     public List<Task> getAllTasks() {
         return taskDb.getTasks();
